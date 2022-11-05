@@ -1,9 +1,7 @@
 # Data solution for analyzing football events
 <br>
 
-> **Warning** <br>
-> This repo is still under development
- 
+> **Warning**: This repo is still under development 
 <br><br>
 
 ## Introduction
