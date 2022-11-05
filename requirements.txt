@@ -1,0 +1,5 @@
+sqlalchemy
+requests
+pandas
+dbt-core
+dbt-snowflake
