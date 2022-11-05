@@ -35,7 +35,7 @@ def insert_query(
 
     dataframe.columns = dataframe.columns.str.replace("%", "percentage")
     dataframe.columns = dataframe.columns.str.replace(" ", "")
-    dataframe.columns = dataframe.columns.str.lower()
+    dataframe.columns = dataframe.columns.str.upper()
 
     # Converting all columns to lower case for consistent handling in snowflake
     # Perform query and return results

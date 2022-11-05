@@ -25,7 +25,7 @@ def convert_to_df(json_result):
             dict_records.update({"year": each_season["year"]})
             dict_records.update({"startdate": each_season["start"]})
             dict_records.update({"enddate": each_season["end"]})
-            dict_records.update({"current": each_season["current"]})
+            dict_records.update({"iscurrent": each_season["current"]})
             dict_records.update(
                 {"fixtureevents": each_season["coverage"]["fixtures"]["events"]}
             )
