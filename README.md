@@ -2,9 +2,10 @@
 <br>
 
 > **Warning**
-> This is a warning
-
->**⚠ WARNING: Aliens are coming.** 
+<br>
+> This repo is still under development
+ 
+<br><br>
 
 ## Introduction
 This project aims to collect some football data and transform into a model that could be consumed for analytics efforts downstream.
