@@ -94,8 +94,4 @@ insert_query(
     if_exists_method=if_exists_method,
 )
 
-
-#%% Convert to dataframe
-print(fixtures_json)
-
 # %%

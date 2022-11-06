@@ -73,3 +73,5 @@ insert_query(
     schema=schema,
     if_exists_method=if_exists_method,
 )
+
+# %%

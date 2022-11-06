@@ -79,14 +79,3 @@ insert_query(
     schema=schema,
     if_exists_method=if_exists_method,
 )
-
-
-#%%
-engine = create_snowflake_engine()
-insert_query(
-    dataframe=df_fixture_events,
-    engine=engine,
-    table_name=table_name,
-    schema=schema,
-    if_exists_method=if_exists_method,
-)

@@ -69,22 +69,3 @@ for leagueId in leagues_to_load:
             schema=schema,
             if_exists_method=if_exists_method,
         )
-
-
-#%% Convert to dataframe
-# df_fixtures = convert_to_df(fixtures_json)
-
-# #%% Inspect results
-# print(df_fixtures.head(2).to_markdown())
-
-# #%% Insert to database
-# engine = create_snowflake_engine()
-# insert_query(
-#     dataframe=df_fixtures,
-#     engine=engine,
-#     table_name=table_name,
-#     schema=schema,
-#     if_exists_method=if_exists_method,
-# )
-
-# %%
