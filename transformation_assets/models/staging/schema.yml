@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: stage_leagues
+    description: "A staged version of the league endpoint"
+    columns:
+      - name: league_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: league_name
+        description: "Name of the competition"
