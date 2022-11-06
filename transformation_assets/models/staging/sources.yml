@@ -1,0 +1,243 @@
+version: 2
+
+sources:
+  - name: raw
+    database: FOOTBALL
+    schema: raw
+    tables:
+      - name: fixtureevents
+        columns:
+        - name: fixtureid
+          description: TEXT
+        - name: teamid
+          description: FIXED
+        - name: type
+          description: TEXT
+        - name: detail
+          description: TEXT
+        - name: comments
+          description: TEXT
+        - name: minute
+          description: FIXED
+        - name: timeextra
+          description: REAL
+        - name: mainplayerid
+          description: FIXED
+        - name: secondaryplayerid
+          description: REAL
+      - name: fixtureplayerstatistics
+        columns:
+        - name: fixtureid
+          description: TEXT
+        - name: teamid
+          description: FIXED
+        - name: playerid
+          description: FIXED
+        - name: playername
+          description: TEXT
+        - name: playerphotomedia
+          description: TEXT
+        - name: offsides
+          description: REAL
+        - name: gamesminutes
+          description: REAL
+        - name: gamesnumber
+          description: FIXED
+        - name: gamesposition
+          description: TEXT
+        - name: gamesrating
+          description: TEXT
+        - name: gamescaptain
+          description: BOOLEAN
+        - name: gamessubstitute
+          description: BOOLEAN
+        - name: shotstotal
+          description: REAL
+        - name: shotson
+          description: REAL
+        - name: goalstotal
+          description: REAL
+        - name: goalsconceded
+          description: FIXED
+        - name: goalsassists
+          description: REAL
+        - name: goalssaves
+          description: REAL
+        - name: passestotal
+          description: REAL
+        - name: passeskey
+          description: REAL
+        - name: passesaccuracy
+          description: TEXT
+        - name: tacklestotal
+          description: REAL
+        - name: tacklesblocks
+          description: REAL
+        - name: tacklesinterceptions
+          description: REAL
+        - name: duelstotal
+          description: REAL
+        - name: duelswon
+          description: REAL
+        - name: dribblesattempts
+          description: REAL
+        - name: dribblessuccess
+          description: REAL
+        - name: dribblespast
+          description: REAL
+        - name: foulsdrawn
+          description: REAL
+        - name: foulscommitted
+          description: REAL
+        - name: cardsyellow
+          description: FIXED
+        - name: cardsred
+          description: FIXED
+        - name: penaltywon
+          description: REAL
+        - name: penaltycommited
+          description: REAL
+        - name: penaltyscored
+          description: FIXED
+        - name: penaltymissed
+          description: FIXED
+        - name: penaltysaved
+          description: REAL
+      - name: fixtures
+        columns:
+        - name: id
+          description: FIXED
+        - name: referee
+          description: TEXT
+        - name: datetimeutc
+          description: TEXT
+        - name: venueid
+          description: FIXED
+        - name: venuename
+          description: TEXT
+        - name: venuecity
+          description: TEXT
+        - name: leagueid
+          description: FIXED
+        - name: leaguename
+          description: TEXT
+        - name: leaguecountry
+          description: TEXT
+        - name: leaguelogomedia
+          description: TEXT
+        - name: leagueflagmedia
+          description: TEXT
+        - name: season
+          description: FIXED
+        - name: round
+          description: TEXT
+        - name: hometeamid
+          description: FIXED
+        - name: hometeamname
+          description: TEXT
+        - name: hometeamlogo
+          description: TEXT
+        - name: hometeamgoals
+          description: REAL
+        - name: awayteamid
+          description: FIXED
+        - name: awayteamname
+          description: TEXT
+        - name: awayteamlogo
+          description: TEXT
+        - name: awayteamgoals
+          description: REAL
+        - name: matchstatus
+          description: TEXT
+        - name: elapsed
+          description: REAL
+      - name: fixtureteamstatistics
+        columns:
+        - name: fixtureid
+          description: TEXT
+        - name: teamid
+          description: FIXED
+        - name: shotsongoal
+          description: REAL
+        - name: shotsoffgoal
+          description: REAL
+        - name: totalshots
+          description: FIXED
+        - name: blockedshots
+          description: REAL
+        - name: shotsinsidebox
+          description: REAL
+        - name: shotsoutsidebox
+          description: REAL
+        - name: fouls
+          description: FIXED
+        - name: cornerkicks
+          description: REAL
+        - name: offsides
+          description: REAL
+        - name: ballpossession
+          description: TEXT
+        - name: yellowcards
+          description: REAL
+        - name: redcards
+          description: REAL
+        - name: goalkeepersaves
+          description: REAL
+        - name: totalpasses
+          description: FIXED
+        - name: passesaccurate
+          description: FIXED
+        - name: passespercentage
+          description: TEXT
+      - name: leagues
+        columns:
+        - name: id
+          description: FIXED
+        - name: name
+          description: TEXT
+        - name: type
+          description: TEXT
+        - name: logomedia
+          description: TEXT
+        - name: country
+          description: TEXT
+        - name: countrycode
+          description: TEXT
+        - name: countryflagmedia
+          description: TEXT
+      - name: seasons
+        columns:
+        - name: leagueid
+          description: FIXED
+        - name: year
+          description: FIXED
+        - name: startdate
+          description: TEXT
+        - name: enddate
+          description: TEXT
+        - name: iscurrent
+          description: BOOLEAN
+        - name: fixtureevents
+          description: BOOLEAN
+        - name: fixturelineups
+          description: BOOLEAN
+        - name: fixturestatistics
+          description: BOOLEAN
+        - name: fixtureplayerstatistics
+          description: BOOLEAN
+        - name: standings
+          description: BOOLEAN
+        - name: players
+          description: BOOLEAN
+        - name: topscorers
+          description: BOOLEAN
+        - name: topassists
+          description: BOOLEAN
+        - name: topcards
+          description: BOOLEAN
+        - name: injuries
+          description: BOOLEAN
+        - name: predictions
+          description: BOOLEAN
+        - name: odds
+          description: BOOLEAN
